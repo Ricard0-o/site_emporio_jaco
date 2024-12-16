@@ -21,7 +21,7 @@ body {
 /* Cabeçalho */
 header {
     position: relative; /* Para conter o pseudo-elemento */
-    background: url('imagens/IMG_20241204_105508293_HDR.jpg') no-repeat center center/cover;
+    background: url('imagens/fundo-prateleiras.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 50px 0;
    
