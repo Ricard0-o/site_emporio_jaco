@@ -23,7 +23,7 @@ header {
     position: relative; /* Para conter o pseudo-elemento */
     background: url('imagens/fundo-prateleiras.jpg') no-repeat center center/cover;
     color: #fff;
-    /* padding: 25px 0; */
+    padding: 0px 0;
    
 }
 
