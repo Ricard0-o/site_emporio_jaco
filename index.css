@@ -64,6 +64,24 @@ body {
     transition: color 0.5s;
 }
 
+.nav-link img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Efeito de brilho na imagem do nav-link ao passar o mouse */
+.nav-link img:hover {
+    filter: brightness(3); /* Aumenta o brilho da imagem */
+    transition: filter 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de brilho na imagem quando o mouse passa sobre o link */
+.nav-link:hover img {
+    filter: brightness(5) grayscale(100%); /* Aumenta o brilho e aplica escala de cinza */
+    transition: filter 0.3s ease; /* Transição suave */
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
