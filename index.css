@@ -329,7 +329,9 @@ footer h3 {
     color: #FFA500;
 }
 
-footer p {
+.info > p > a {
+    color: white;     
+    text-decoration: none;
     margin: 5px 0;
 }
 
@@ -347,6 +349,59 @@ footer .copyright {
     margin-top: 20px;
     font-size: 0.9em;
     color: #aaa;
+}
+
+/* Botão Flutuante WhatsApp */
+.btn-flutuante-whatsapp {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-flutuante-whatsapp img {
+    width: 35px;
+    height: 35px;
+}
+
+.btn-flutuante-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão Flutuante Voltar ao Topo */
+.btn-flutuante-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFA500;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-flutuante-topo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsividade */
