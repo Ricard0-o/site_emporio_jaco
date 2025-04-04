@@ -11,46 +11,58 @@ body {
     color: #333;
 }
 
-
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #FFA500;
-    padding: 10px 20px;
-  }
-  
-  .navbar-left {
+    padding: 2.5px 5px;
+}
+
+.navbar-left {
     display: flex;
     align-items: center;
-  }
-  
-  .logo-link {
-    text-decoration: none;
-  }
-  
-  .logo-nav {
-    height: 40px;
-    width: auto;
-  }
-  
-  .navbar-right {
+}
+
+.logo-container {
     display: flex;
-    gap: 15px;
-  }
-  
-  .nav-link {
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+
+
+.logo-nav { /*img logo*/
+    height: 70px;
+    width: auto;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link {
     color: white;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
     transition: color 0.3s;
-    border-radius: 100%;
-  }
-  
-  .nav-link:hover {
-    color: #000;
-  }
+    background: #00000076;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+}
+
+.nav-link:hover {
+    color: white;
+    background: #000000d9;
+    transition: color 0.5s;
+}
 
 .container {
     width: 100%;
@@ -59,52 +71,67 @@ body {
     text-align: center;
 }
 
+/* Main Container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Garante que ocupe 100% da altura da tela */
+    width: 100%; /* Garante que ocupe 100% da largura */
+    overflow: hidden; /* Evita rolagem desnecessária */
+}
+
 /* Cabeçalho */
 header {
-    position: relative; /* Para conter o pseudo-elemento */
+    flex: 1; /* Faz o header ocupar o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background: url('imagens/fundo-prateleiras.jpg') no-repeat center center/cover;
     color: #fff;
-    padding: 5px 0;
-   
-   
+    padding: 20px;
+    position: relative; /* Necessário para o uso do ::before */
 }
 
 header::before {
-    content: ''; /* Necessário para pseudo-elementos */
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Escurece a imagem (50% de opacidade) */
-    z-index: 1; /* Fica atrás do conteúdo */
+    background: rgba(0, 0, 0, 0.5); /* Cor escura aplicada sobre a imagem */
+    z-index: 1; /* Fica abaixo do conteúdo do header */
 }
 
 header * {
-    margin-top: 50px;
-    position: relative; /* Garante que o conteúdo apareça acima */
+    position: relative; /* Garante que o conteúdo fique acima do ::before */
     z-index: 2;
 }
 
-
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 header .logo img {
     width: 300px;
-
-
 }
-
-
 
 header h1 {
     font-size: 2.5rem;
-    margin: 0px 0px 10px 0;
+    margin: 10px 0;
     color: #FFA500;
 }
 
 header p {
     font-size: 1rem;
-    margin: 10px 0 0px 0;
+    margin: 10px 0;
+}
+
+header .btn {
+    margin-top: 20px;
 }
 
 .btn {
@@ -123,12 +150,11 @@ header p {
 }
 
 /* Serviços */
-.servicos h2 span,
-.seguranca h2 span {
+.servicos h2 span {
     color: #FFA500;
 }
 
-.servicos > .container > a{
+.servicos > .container > a {
     margin: 10px 0px;
 }
 
@@ -170,6 +196,10 @@ header p {
 
 .seguranca h2 {
     margin-bottom: 10px;
+}
+
+.seguranca h2 span {
+    color: #FFA500;
 }
 
 .seguranca p {
@@ -239,10 +269,11 @@ header p {
     margin: 5px 0;
 }
 
-.comentario-texto img{
+.comentario-texto img {
     height: 150px;
     width: 100%;
 }
+
 /* Sobre Nós */
 .sobre-nos {
     background: #333;
@@ -269,11 +300,6 @@ header p {
     flex: 1;
     max-width: 500px;
 }
-
-/* .sobre-nos-conteudo .texto > a {
-
-} */
-
 
 .sobre-nos-conteudo .imagem img {
     width: 100%;
@@ -315,7 +341,6 @@ footer {
     padding: 20px 0;
 }
 
-
 footer .container {
     display: flex;
     justify-content: center;
@@ -330,12 +355,12 @@ footer h3 {
 }
 
 .info > p > a {
-    color: white;     
+    color: white;
     text-decoration: none;
     margin: 5px 0;
 }
 
-footer .mapa{
+footer .mapa {
     width: 100%;
     padding: 30px;
 }
@@ -351,7 +376,7 @@ footer .copyright {
     color: #aaa;
 }
 
-/* Botão Flutuante WhatsApp */
+/* Botões Flutuantes */
 .btn-flutuante-whatsapp {
     position: fixed;
     bottom: 80px;
@@ -378,7 +403,6 @@ footer .copyright {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Botão Flutuante Voltar ao Topo */
 .btn-flutuante-topo {
     position: fixed;
     bottom: 20px;
@@ -420,5 +444,9 @@ footer .copyright {
         margin-bottom: 10px;
     }
 
-   
+    .navbar-right {
+
+        gap: 10px;
+    }
+    
 }
