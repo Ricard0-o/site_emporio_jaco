@@ -1,4 +1,4 @@
-/* Reset Geral */
+url(site_emporio_jaco-main/index.html)/* Reset Geral */
 * {
     margin: 0;
     padding: 0;
@@ -44,24 +44,32 @@ body {
 
 .navbar-right {
     display: flex;
-    gap: 25px;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 /**/
 .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     color: white;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
     transition: color 0.3s;
-    background: #00000076;
+    box-shadow: 0px 4.5px 10px 2px #00000054;
+
     border-radius: 10px;
-    padding: 0px 10px 0px 10px;
+    padding: 5px 7.5px 5px 10px;
 }
 
 .nav-link:hover {
     color: white;
-    background: #000000d9;
-    transition: color 0.5s;
+    box-shadow:0px 4.5px 10px 2px #f4f4f454;
+    transition: box-shadow 0.3s ease;
 }
 
 .nav-link img {
@@ -87,6 +95,16 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+}
+
+.comentario{
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 16px 32px rgba(0,0,0,0.3);
+}
+
+.comentario:hover { 
+    transform: scale(1.02) translateY(-5px);
 }
 
 /* Main Container */
@@ -161,10 +179,15 @@ header .btn {
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 16px 32px rgba(0,0,0,0.1); 
+
 }
 
 .btn:hover {
     background: #ff7800;
+    transform: scale(1.02) translateY(-5px);
 }
 
 /* Serviços */
@@ -180,17 +203,25 @@ header .btn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     margin: 20px 0;
 }
 
 .card {
     background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.3); 
+
     border-radius: 5px;
     overflow: hidden;
     text-align: center;
     width: 300px;
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover{
+transform: scale(1.05) translateY(-10px);
+      /* box-shadow: 0 16px 32px rgba(0,0,0,0.3); */
 }
 
 .card img {
@@ -352,6 +383,41 @@ header .btn {
     color: #FFA500;
 }
 
+/*--------------*/
+.garantias ul {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f4f4f4;
+
+    list-style: none;
+    padding: 0;
+  }
+  
+  .garantias li {
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+  }
+  
+  .garantias li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #44fe44f7; /* cor da linha animada */
+    transition: width 0.3s ease;
+  }
+  
+  .garantias li:hover::after {
+    width: 100%;
+  }
+  /*-------------*/
+
 /* Rodapé */
 footer {
     background: #222;
@@ -377,6 +443,28 @@ footer h3 {
     text-decoration: none;
     margin: 5px 0;
 }
+
+.info p {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-bottom: 4px;
+  }
+
+  .info p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #FFA500; /* Cor do sublinhado */
+    transition: width 0.3s ease;
+  }
+
+  .info p:hover::after {
+    width: 100%;
+  }
 
 footer .mapa {
     width: 100%;
@@ -467,4 +555,10 @@ footer .copyright {
         gap: 10px;
     }
     
+}
+
+@media (max-width: 500px) {
+    .nav-link > span{
+        display: none;
+    }
 }

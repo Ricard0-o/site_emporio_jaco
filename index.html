@@ -9,6 +9,11 @@
     <title>Empório Jacó</title>
     <!-- Link para CSS -->
     <link rel="stylesheet" href="index.css">
+    <!-- Link para js-links_w -->
+    <!-- Link para js -->
+    <script src="script/links.js" defer></script>
+    <!-- Link para js-links_w -->
+    <script src="script/apenasIcon.js" defer></script>
     <!-- Fontes Google -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head> <!-- -->
@@ -23,14 +28,17 @@
             </div>
         </div>
         <div class="navbar-right">
-            <a href="index.html" class="nav-link">
-                <img src="imagens/casa.png" alt="Início" class="nav-icon"> Início
+            <a href="index.html" class="nav-link" id="nav-link">
+                <img src="imagens/casa.png" alt="Início" class="nav-icon"> 
+                <span>Início</span>
             </a>
-            <a href="#servicos" class="nav-link">
-                <img src="imagens/entregavel.png" alt="Produtos" class="nav-icon"> Produtos
+            <a href="#servicos" class="nav-link" id="nav-link">
+                <img src="imagens/entregavel.png" alt="Produtos" class="nav-icon"> 
+                <span>Produtos</span>
             </a>
-            <a href="#contato" class="nav-link">
-                <img src="imagens/loc.png" alt="Endereço e Horário" class="nav-icon"> Endereço e Horário
+            <a href="#contato" class="nav-link" id="nav-link">
+                <img src="imagens/loc.png" alt="Endereço e Horário" class="nav-icon">
+                <span>Endereço e Horário</span>
             </a>
         </div>
     </nav>
@@ -43,7 +51,7 @@
             </div>
             <h1>EMPÓRIO <span>JACÓ</span></h1>
             <p>Frango assado todos os domingos <br>Vila Santa Margarida, Ferraz de Vasconcelos - SP</p>
-            <a href="https://api.whatsapp.com/send/?phone=982291555&text=Eu+desejo+ver+o+menu&type=phone_number&app_absent=0" class="btn">Solicitar contato ›</a>
+            <a href="" class="btn">Solicitar contato ›</a>
         </div>
     </header>
 </div>
@@ -52,28 +60,34 @@
         <div class="container"><h2>Experimente e<span> nunca esqueça </span> você merece</h2>
             <div class="cards">
                 <div class="card">
-                    <img src="imagens/frangoAssadoM.png" alt="Frango Assado">
                     <h3>Frango Assado</h3>
+                    <img src="imagens/frangoAssadoM.png" alt="Frango Assado">
+                    <h3>R$: 45.99</h3>
                 </div>
                 <div class="card">
-                    <img src="imagens/cocaColoa.png" alt="Coca-Cola">
                     <h3>Coca-Cola 2L</h3>
+                    <img src="imagens/cocaColoa.png" alt="Coca-Cola">
+                    <h3>R$: 8.99</h3>
                 </div>
                 <div class="card">
-                    <img src="imagens/fantaLaranja.png" alt="Fanta Laranja">
                     <h3>Fanta Laranja</h3>
+                    <img src="imagens/fantaLaranja.png" alt="Fanta Laranja">
+                    <h3>8.99</h3>
                 </div>
                 <div class="card">
-                    <img src="imagens/fantaUva.png" alt="Fanta Uva">
                     <h3>Fanta Uva</h3>
+                    <img src="imagens/fantaUva.png" alt="Fanta Uva">
+                    <h3>R$: 8.99</h3>
                 </div>
                 <div class="card">
-                    <img src="imagens/lasanhaVm.png" alt="Lasanha à Bolonhesa">
                     <h3>Lasanha à Bolonhesa</h3>
+                    <img src="imagens/lasanhaVm.png" alt="Lasanha à Bolonhesa">
+                    <h3>R$: 14.90</h3>
                 </div>
                 <div class="card">
-                    <img src="imagens/lasanhaVd.png" alt="Lasanha 4 Queijos">
                     <h3>Lasanha 4 Queijos</h3>
+                    <img src="imagens/lasanhaVd.png" alt="Lasanha 4 Queijos">
+                    <h3>R$: 14.90</h3>
                 </div>
             </div>
             <a href="https://api.whatsapp.com/send/?phone=982291555&text=Eu+desejo+ver+o+menu&type=phone_number&app_absent=0" class="btn">Solicitar contato ›</a>
@@ -130,7 +144,7 @@
                     <img src="imagens/experiencia-do-cliente.jpg" alt="Equipe Empório Jacó">
                 </div>
             </div>
-            <a href="https://api.whatsapp.com/send/?phone=982291555&text=Eu+desejo+ver+o+menu&type=phone_number&app_absent=0" class="btn">Solicitar contato</a>
+            <a href="https://api.whatsapp.com/send/?phone=982291555&text=Eu+desejo+ver+o+menu&type=phone_number&app_absent=0" class="btn">Solicitar contato ›</a>
         </div>
     </section>
 
@@ -156,7 +170,7 @@
                         Empório Jacó tem o objetivo de proporcionar a melhor experiência para você e sua família com nossos serviços, produtos e entregas!
                     </p>
                     <p>
-                        Há mais de <strong>50 anos</strong>, trabalhamos com o preparo e venda de frangos assados prezando pelo sabor e qualidade através de profissionais altamente preparados.
+                        Des de <strong>1982</strong>, trabalhamos com o preparo e venda de frangos assados prezando pelo sabor e qualidade através de profissionais altamente preparados.
                     </p>
                     <p>
                         <strong>Agende agora uma entraga clicando no botão abaixo!</strong>
@@ -166,7 +180,7 @@
                     <img src="imagens/capa_capacitacao-profissional.png" alt="Equipe Kings Auto Center">
                 </div>
             </div>
-            <a href="https://api.whatsapp.com/send/?phone=982291555&text=Eu+desejo+ver+o+menu&type=phone_number&app_absent=0" class="btn">Solicitar contato</a>
+            <a href="https://api.whatsapp.com/send/?phone=982291555&text=Eu+desejo+ver+o+menu&type=phone_number&app_absent=0" class="btn">Solicitar contato ›</a>
 
         </div>
     </section>
@@ -181,7 +195,7 @@
                 <li>✅ Profissionais Treinados</li>
                 <li>✅ Alto Padrão de Qualidade</li>
             </ul>
-            <a href="https://api.whatsapp.com/send/?phone=982291555&text=Eu+desejo+ver+o+menu&type=phone_number&app_absent=0" class="btn">Solicitar contato</a>
+            <a href="https://api.whatsapp.com/send/?phone=982291555&text=Eu+desejo+ver+o+menu&type=phone_number&app_absent=0" class="btn">Solicitar contato ›</a>
         </div>
     </section>
 
@@ -195,7 +209,8 @@
                 <h3>Endereço:</h3>
                 <p><a href="https://maps.app.goo.gl/LEF77ZUWD2WpjbATA" target="_blank">👉Av. Albino F. de Figueiredo, 329 - Vila Santa Margarida, Ferraz de Vasconcelos - SP👈</a></p>
                 <h3>Horários:</h3>
-                <p>Segunda a Sabado, das 08:00 às 18:00.<br>Domingo de 09:00 às 15:00.</p>
+                <p>Segunda a Sabado, das 08:00 às 18:00. </p> <br>
+                <p> Domingo de 09:00 às 15:00.</p>
             </div>
             <div class="mapa">
                 <iframe
