@@ -1,5 +1,5 @@
 // - - - - - - - - - - links
-const link_w = "https://www.youtube.com/";
+const link_w = " https://api.whatsapp.com/send/?phone=982291555&text=Olá,+gostaria+de+mais+informações!  ";
 
 // funcção que atribui o link link_w para todos os btr
 
